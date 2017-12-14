@@ -1,5 +1,5 @@
 %filepath = 'F:\\Courses\\Image Processing\\data\\standard_test_images\\cameraman.tif';
-filepath = 'F:\Courses\Image Processing\images\DIP3E_Original_Images_CH03\Fig0316(2)(2nd_from_top).tif';
+filepath = 'F:\Courses\Image Processing\images\DIP3E_Original_Images_CH03\Fig0323(a)(mars_moon_phobos).tif';
 
 I0 = im2uint8(imread(filepath));
 I = I0;
@@ -17,7 +17,7 @@ end
 
 for i = 1 : size(I, 1)
     for j = 1: size(I,2)
-        idx = I(i,j);
+        idx = I(i,j) + 1;
         I(i,j) = s(idx);
     end
 end
